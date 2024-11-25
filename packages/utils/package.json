@@ -13,5 +13,16 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.7.2"
+  },
+  "nx": {
+    "targets": {
+      "build": {
+        "cache": true, 
+        "dependsOn": ["^build"],
+        "outputs": [
+          "{projectRoot}/dist/**/*"
+        ]
+      }
+    }
   }
 }
