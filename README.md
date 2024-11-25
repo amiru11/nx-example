@@ -48,3 +48,20 @@ pnpx create-next-app@latest
 ```(bash)
 pnpm --filter my-app dev
 ```
+
+## nx 주요기능 - Run Tasks
+
+Syntax: nx <target name> <project name> <option overrides>
+
+- nx는 단일 워크스페이스 혹은 전체 워크스페이스들에 대한 태스크 수행 명령어를 가지고 있습니다.
+- 단일 워크스페이스 태스크 실행: nx build my-app
+- 전체 워크스페이스 태스크 실행: nx run-many -t [script]
+
+## nx 주요기능 - Cache Task Results
+
+- 캐싱 기능 제공. 태스크 실행 명령어를 실행하면 여러방식의 설정 파일로부터 캐싱을 어떻게 하는지 체크합니다.
+- nx.json / project.json / package.json 등을 이용해서 설정합니다.
+- lerna와 비슷하다
+
+## nx 주요기능 - Use Remote Caching
+- Nx Cloud를 사용하면 원격 캐싱을 사용할 수 있습니다. - nx connect-to-nx-cloud
